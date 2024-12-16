@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnBack">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>640</y>
+      <width>80</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back [ESC]</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAction">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>640</y>
+      <width>80</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Action [F10]</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>966</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionHello_New_User"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionRevert"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionSidebar"/>
+    <addaction name="actionMessage_Panel"/>
+    <addaction name="actionNotifications"/>
+   </widget>
+   <widget class="QMenu" name="menuDesk">
+    <property name="title">
+     <string>Desk</string>
+    </property>
+    <addaction name="actionTime_Summary"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppointments"/>
+    <addaction name="actionPhone_Calls"/>
+    <addaction name="actionContacts"/>
+    <addaction name="actionTodo_Lists"/>
+    <addaction name="separator"/>
+    <addaction name="actionDate_Display"/>
+    <addaction name="actionWord_Processor"/>
+    <addaction name="actionCalculator"/>
+   </widget>
+   <widget class="QMenu" name="menuMoney">
+    <property name="title">
+     <string>Money</string>
+    </property>
+    <addaction name="actionCheck_Register"/>
+    <addaction name="separator"/>
+    <addaction name="actionMoney_Accounts"/>
+    <addaction name="actionSpend_Money"/>
+    <addaction name="actionRecieve_Money"/>
+    <addaction name="actionTransfer_Money"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_Checks"/>
+    <addaction name="actionCheckFree"/>
+    <addaction name="actionReconcile_Account"/>
+    <addaction name="actionQuick_List"/>
+    <addaction name="actionAlert_List"/>
+    <addaction name="separator"/>
+    <addaction name="actionFinancial_Reports"/>
+    <addaction name="actionBudget_Categories"/>
+    <addaction name="actionLoan_Records"/>
+    <addaction name="actionForecasting"/>
+   </widget>
+   <widget class="QMenu" name="menuTax">
+    <property name="title">
+     <string>Tax</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuInsure">
+    <property name="title">
+     <string>Insure</string>
+    </property>
+    <addaction name="actionLife_Expectancy"/>
+    <addaction name="actionLife_Insurance_Needs"/>
+    <addaction name="actionLife_Insurance_Costs"/>
+    <addaction name="actionInsurance_Organizer"/>
+    <addaction name="actionVital_Records"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalyze">
+    <property name="title">
+     <string>Analyze</string>
+    </property>
+    <addaction name="actionCompound_Interest"/>
+    <addaction name="actionInflator_Deflator"/>
+    <addaction name="actionLoans_and_Annuities"/>
+    <addaction name="actionYield_to_Maturity"/>
+    <addaction name="actionSavings_Accounts_Deals"/>
+    <addaction name="actionDays_Between_Dates"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoan_Amortization"/>
+    <addaction name="actionMortgage_Refinancing"/>
+    <addaction name="actionHome_Affordability"/>
+    <addaction name="actionRental_Properties"/>
+    <addaction name="actionBuy_Lease_Rent"/>
+    <addaction name="actionInvestment_Analysis"/>
+    <addaction name="separator"/>
+    <addaction name="actionGoal_Planning"/>
+    <addaction name="actionTuition_Planning"/>
+    <addaction name="actionRetirement_Planning"/>
+   </widget>
+   <widget class="QMenu" name="menuPortfolio">
+    <property name="title">
+     <string>Portfolio</string>
+    </property>
+    <addaction name="actionDisplay_Assets"/>
+    <addaction name="actionPortfolio_Accounts"/>
+    <addaction name="actionBuy_Assets"/>
+    <addaction name="actionSell_Assets"/>
+    <addaction name="actionSplit_Stocks"/>
+    <addaction name="separator"/>
+    <addaction name="actionUpdate_Prices"/>
+    <addaction name="actionRecord_Income"/>
+    <addaction name="actionAnalyze_Assets"/>
+    <addaction name="actionView_Income"/>
+    <addaction name="separator"/>
+    <addaction name="actionPortfolio_Reports"/>
+    <addaction name="actionQuotelink"/>
+    <addaction name="actionFinancial_Reminders"/>
+    <addaction name="actionBullishness_Index"/>
+   </widget>
+   <widget class="QMenu" name="menuNet_Worth">
+    <property name="title">
+     <string>Net Worth</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionQuick_Key"/>
+    <addaction name="actionMym_mym_Manual"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuDesk"/>
+   <addaction name="menuMoney"/>
+   <addaction name="menuTax"/>
+   <addaction name="menuInsure"/>
+   <addaction name="menuAnalyze"/>
+   <addaction name="menuPortfolio"/>
+   <addaction name="menuNet_Worth"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionCheck_Register">
+   <property name="text">
+    <string>Check Register</string>
+   </property>
+  </action>
+  <action name="actionMoney_Accounts">
+   <property name="text">
+    <string>Money Accounts</string>
+   </property>
+  </action>
+  <action name="actionSpend_Money">
+   <property name="text">
+    <string>Spend Money</string>
+   </property>
+  </action>
+  <action name="actionRecieve_Money">
+   <property name="text">
+    <string>Recieve Money</string>
+   </property>
+  </action>
+  <action name="actionTransfer_Money">
+   <property name="text">
+    <string>Transfer Money</string>
+   </property>
+  </action>
+  <action name="actionPrint_Checks">
+   <property name="text">
+    <string>Print Checks</string>
+   </property>
+  </action>
+  <action name="actionCheckFree">
+   <property name="text">
+    <string>BillPay Interface</string>
+   </property>
+  </action>
+  <action name="actionReconcile_Account">
+   <property name="text">
+    <string>Reconcile Account</string>
+   </property>
+  </action>
+  <action name="actionQuick_List">
+   <property name="text">
+    <string>Quick List</string>
+   </property>
+  </action>
+  <action name="actionAlert_List">
+   <property name="text">
+    <string>Alert List</string>
+   </property>
+  </action>
+  <action name="actionFinancial_Reports">
+   <property name="text">
+    <string>Financial Reports</string>
+   </property>
+  </action>
+  <action name="actionBudget_Categories">
+   <property name="text">
+    <string>Budget Categories</string>
+   </property>
+  </action>
+  <action name="actionLoan_Records">
+   <property name="text">
+    <string>Loan Records</string>
+   </property>
+  </action>
+  <action name="actionForecasting">
+   <property name="text">
+    <string>Forecasting</string>
+   </property>
+  </action>
+  <action name="actionHello_New_User">
+   <property name="text">
+    <string>Hello, New User</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionRevert">
+   <property name="text">
+    <string>Revert</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionTime_Summary">
+   <property name="text">
+    <string>Time Summary</string>
+   </property>
+  </action>
+  <action name="actionAppointments">
+   <property name="text">
+    <string>Appointments</string>
+   </property>
+  </action>
+  <action name="actionPhone_Calls">
+   <property name="text">
+    <string>Phone Calls</string>
+   </property>
+  </action>
+  <action name="actionTodo_Lists">
+   <property name="text">
+    <string>Todo Lists</string>
+   </property>
+  </action>
+  <action name="actionContacts">
+   <property name="text">
+    <string>Contacts</string>
+   </property>
+  </action>
+  <action name="actionWord_Processor">
+   <property name="text">
+    <string>Word Processor</string>
+   </property>
+  </action>
+  <action name="actionDate_Display">
+   <property name="text">
+    <string>Date Display</string>
+   </property>
+  </action>
+  <action name="actionCalculator">
+   <property name="text">
+    <string>Calculator</string>
+   </property>
+  </action>
+  <action name="actionQuick_Key">
+   <property name="text">
+    <string>Quick Key </string>
+   </property>
+  </action>
+  <action name="actionMym_mym_Manual">
+   <property name="text">
+    <string>Mym (mym) Manual</string>
+   </property>
+  </action>
+  <action name="actionSidebar">
+   <property name="text">
+    <string>Sidebar</string>
+   </property>
+  </action>
+  <action name="actionMessage_Panel">
+   <property name="text">
+    <string>Message Panel</string>
+   </property>
+  </action>
+  <action name="actionNotifications">
+   <property name="text">
+    <string>Notifications</string>
+   </property>
+  </action>
+  <action name="actionLife_Expectancy">
+   <property name="text">
+    <string>Life Expectancy</string>
+   </property>
+  </action>
+  <action name="actionLife_Insurance_Needs">
+   <property name="text">
+    <string>Life Insurance Needs</string>
+   </property>
+  </action>
+  <action name="actionLife_Insurance_Costs">
+   <property name="text">
+    <string>Life Insurance Costs</string>
+   </property>
+  </action>
+  <action name="actionInsurance_Organizer">
+   <property name="text">
+    <string>Insurance Organizer</string>
+   </property>
+  </action>
+  <action name="actionVital_Records">
+   <property name="text">
+    <string>Vital Records Vault</string>
+   </property>
+  </action>
+  <action name="actionCompound_Interest">
+   <property name="text">
+    <string>Compound Interest</string>
+   </property>
+  </action>
+  <action name="actionInflator_Deflator">
+   <property name="text">
+    <string>Inflator/Deflator</string>
+   </property>
+  </action>
+  <action name="actionLoans_and_Annuities">
+   <property name="text">
+    <string>Loans and Annuities</string>
+   </property>
+  </action>
+  <action name="actionYield_to_Maturity">
+   <property name="text">
+    <string>Yield to Maturity</string>
+   </property>
+  </action>
+  <action name="actionSavings_Accounts_Deals">
+   <property name="text">
+    <string>Savings Accounts Deals</string>
+   </property>
+  </action>
+  <action name="actionDays_Between_Dates">
+   <property name="text">
+    <string>Days Between Dates</string>
+   </property>
+  </action>
+  <action name="actionLoan_Amortization">
+   <property name="text">
+    <string>Loan Amortization</string>
+   </property>
+  </action>
+  <action name="actionMortgage_Refinancing">
+   <property name="text">
+    <string>Mortgage Refinancing</string>
+   </property>
+  </action>
+  <action name="actionHome_Affordability">
+   <property name="text">
+    <string>Home Affordability</string>
+   </property>
+  </action>
+  <action name="actionRental_Properties">
+   <property name="text">
+    <string>Rental Properties</string>
+   </property>
+  </action>
+  <action name="actionBuy_Lease_Rent">
+   <property name="text">
+    <string>Buy/Lease/Rent</string>
+   </property>
+  </action>
+  <action name="actionInvestment_Analysis">
+   <property name="text">
+    <string>Investment Analysis</string>
+   </property>
+  </action>
+  <action name="actionGoal_Planning">
+   <property name="text">
+    <string>Goal Planning</string>
+   </property>
+  </action>
+  <action name="actionTuition_Planning">
+   <property name="text">
+    <string>Tuition Planning</string>
+   </property>
+  </action>
+  <action name="actionRetirement_Planning">
+   <property name="text">
+    <string>Retirement Planning</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Assets">
+   <property name="text">
+    <string>Display Assets</string>
+   </property>
+  </action>
+  <action name="actionPortfolio_Accounts">
+   <property name="text">
+    <string>Portfolio Accounts</string>
+   </property>
+  </action>
+  <action name="actionBuy_Assets">
+   <property name="text">
+    <string>Buy Assets</string>
+   </property>
+  </action>
+  <action name="actionSell_Assets">
+   <property name="text">
+    <string>Sell Assets</string>
+   </property>
+  </action>
+  <action name="actionSplit_Stocks">
+   <property name="text">
+    <string>Split Stocks</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Prices">
+   <property name="text">
+    <string>Update Prices</string>
+   </property>
+  </action>
+  <action name="actionRecord_Income">
+   <property name="text">
+    <string>Record Income</string>
+   </property>
+  </action>
+  <action name="actionAnalyze_Assets">
+   <property name="text">
+    <string>Analyze Assets</string>
+   </property>
+  </action>
+  <action name="actionView_Income">
+   <property name="text">
+    <string>View Income</string>
+   </property>
+  </action>
+  <action name="actionPortfolio_Reports">
+   <property name="text">
+    <string>Portfolio Reports</string>
+   </property>
+  </action>
+  <action name="actionQuotelink">
+   <property name="text">
+    <string>Quotelink</string>
+   </property>
+  </action>
+  <action name="actionFinancial_Reminders">
+   <property name="text">
+    <string>Financial Reminders</string>
+   </property>
+  </action>
+  <action name="actionBullishness_Index">
+   <property name="text">
+    <string>Bullishness Index</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
