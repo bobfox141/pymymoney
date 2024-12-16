@@ -180,6 +180,10 @@
     <property name="title">
      <string>Net Worth</string>
     </property>
+    <addaction name="actionYour_Net_Worth"/>
+    <addaction name="actionNet_Worth_History"/>
+    <addaction name="separator"/>
+    <addaction name="actionAsset_Allocation"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -575,6 +579,21 @@
   <action name="actionBullishness_Index">
    <property name="text">
     <string>Bullishness Index</string>
+   </property>
+  </action>
+  <action name="actionYour_Net_Worth">
+   <property name="text">
+    <string>Your Net Worth</string>
+   </property>
+  </action>
+  <action name="actionNet_Worth_History">
+   <property name="text">
+    <string>Net Worth History</string>
+   </property>
+  </action>
+  <action name="actionAsset_Allocation">
+   <property name="text">
+    <string>Asset Allocation</string>
    </property>
   </action>
  </widget>
